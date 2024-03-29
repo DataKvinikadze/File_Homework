@@ -6,16 +6,27 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: var(--background_color);
 }
 
 :root {
-  --header-color: #4d4f62;
+  --header_color: #4d4f62;
+  --background_color: #f5f5f5;
+  --border_top1: #44d3d2;
+  --border_top2: #ea5454;
+  --border_top3: #fcae4a;
+  --border_top4: #549ef2;
 }
 
+/* header  */
+
 header .header_content {
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 60px;
 }
 
 .header_content .text_1 {
@@ -30,6 +41,7 @@ header .header_content {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 13px;
+  opacity: 0.8;
 }
 
 .header_content .text_3 {
@@ -40,4 +52,85 @@ header .header_content {
   color: var(--header-color);
   letter-spacing: 0.1px;
   opacity: 0.5;
+}
+
+/* main */
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  grid-gap: 40px 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 1110px;
+  height: 530px;
+}
+
+.container .info1 {
+  width: 350px;
+  height: 250px;
+  padding: 32px;
+  background-color: #ffffff;
+  border-top: solid 3px var(--border_top1);
+  border-radius: 8px;
+  grid-column: 1;
+  grid-row: 2 / 4;
+}
+
+.container .info2 {
+  width: 350px;
+  height: 250px;
+  padding: 32px;
+  background-color: #ffffff;
+  border-top: solid 3px var(--border_top2);
+  border-radius: 8px;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+.container .info3 {
+  width: 350px;
+  height: 250px;
+  padding: 32px;
+  background-color: #ffffff;
+  border-top: solid 3px var(--border_top3);
+  border-radius: 8px;
+  grid-column: 2;
+  grid-row: 3 / span 2;
+}
+
+.container .info4 {
+  width: 350px;
+  height: 250px;
+  padding: 32px;
+  background-color: #ffffff;
+  border-top: solid 3px var(--border_top4);
+  border-radius: 8px;
+  grid-column: 3;
+  grid-row: 2 / 4;
+}
+
+.container .info_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.info_content .spn1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--header-color);
+}
+
+.info_content .spn2 {
+  font-size: 13px;
+  color: var(--header-color);
+  opacity: 0.5;
+}
+
+img {
+  position: relative;
+  top: 40px;
+  left: 222px;
 }
