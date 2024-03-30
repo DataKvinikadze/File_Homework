@@ -159,8 +159,6 @@ img {
   .container {
     grid-template-columns: 1fr;
     width: auto;
-    grid-gap: 0px 0px;
-    width: auto;
     height: 960px;
     grid-gap: 25px;
   }
